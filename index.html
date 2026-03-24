@@ -1,10 +1,415 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Faceit Account Finder</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Faceit Account Finder</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg,#000,#111,#ff6a0020);
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #ff6a00;
+}
+
+.hero p {
+  color: #aaa;
+  max-width: 700px;
+  margin: auto;
+}
+
+.btn {
+  background: #ff6a00;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.card h3 {
+  color: #ff6a00;
+}
+
+.app-section {
+  text-align: center;
+}
+
+.app-section img {
+  width: 250px;
+  margin-top: 20px;
+}
+
+.faq {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+</style>
 </head>
+
 <body>
-  <h1>Faceit Account Finder Developer Site</h1>
-  <p>App-ads.txt is hosted at <a href="app-ads.txt">app-ads.txt</a></p>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Analyze Your FACEIT CS2 Stats</h1>
+  <p>
+    Using Faceit Account Finder, you can analyze detailed FACEIT CS2 stats,
+    including elo, level, match history, teams, hubs, teammates comparison,
+    leaderboards and more.
+  </p>
+  <a href="https://play.google.com/store/apps/details?id=com.msappcraft.faceitfinder&hl=en" class="btn">
+    Download App
+  </a>
+</section>
+
+<!-- WHY USE -->
+<section class="section container">
+  <h2>Why Use Faceit Account Finder?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Advanced Stats</h3>
+      <p>Get deep insights into player performance, match history and consistency.</p>
+    </div>
+
+    <div class="card">
+      <h3>ELO Tracking</h3>
+      <p>Track your ELO progression and understand your rank growth over time.</p>
+    </div>
+
+    <div class="card">
+      <h3>Map Performance</h3>
+      <p>Analyze performance on each map including win rate, KD and impact.</p>
+    </div>
+
+    <div class="card">
+      <h3>Steam + Faceit</h3>
+      <p>Connect Steam profiles and Faceit accounts seamlessly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RANKINGS -->
+<section class="section container">
+  <h2>Leaderboards & Rankings</h2>
+  <p style="text-align:center;color:#aaa">
+    Stay ahead with global rankings, FPL insights and pro-level tracking.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>ELO Rankings</h3>
+      <p>Monitor your ranking and climb competitive ladders.</p>
+    </div>
+
+    <div class="card">
+      <h3>FPL Insights</h3>
+      <p>Track professional players and elite competition data.</p>
+    </div>
+
+    <div class="card">
+      <h3>Progress Tracking</h3>
+      <p>Analyze your journey from casual matches to pro level.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section container">
+  <h2>How It Works</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Enter Details</h3>
+      <p>Input Faceit ID, nickname or Steam URL.</p>
+    </div>
+
+    <div class="card">
+      <h3>Smart Linking</h3>
+      <p>We connect Steam & Faceit data automatically.</p>
+    </div>
+
+    <div class="card">
+      <h3>Get Stats</h3>
+      <p>View complete CS2 stats instantly.</p>
+    </div>
+
+    <div class="card">
+      <h3>Improve</h3>
+      <p>Track progress and level up your gameplay.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MOBILE APP -->
+<section class="section app-section container">
+  <h2>Get the Mobile App</h2>
+  <p style="color:#aaa">Download Faceit Account Finder on Google Play</p>
+
+  <a href="https://play.google.com/store/apps/details?id=com.msappcraft.faceitfinder&hl=en" class="btn">
+    Download on Play Store
+  </a>
+</section>
+
+<!-- FAQ -->
+<section class="section container faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+                <div class="faq-question">
+                    1. What is Faceit Account Finder?
+                </div>
+                <div class="faq-answer">
+                    Faceit Account Finder is a powerful Faceit tracker and stats analyzer for CS2/CSGO players. It helps
+                    you track detailed Faceit stats using your Faceit nickname or ID. This Faceit analyzer provides
+                    in-depth match history, KD ratio, map performance, ban history, ELO rating, and player level.
+                    Whether you're looking for a Faceit profile finder or a way to analyze friends using a Faceit
+                    tracker tool, this platform has you covered.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    2. How do I use the Faceit account finder?
+                </div>
+                <div class="faq-answer">
+                    To locate a Faceit account using our Faceit stats finder:<br><br>
+                    • Simply enter a Faceit nickname or Faceit account ID.<br>
+                    • Our Faceit analyser tool will instantly fetch and display their CS:GO or CS2 statistics.<br>
+                    • Perfect for anyone seeking a fast and reliable Faceit profile analyzer.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    3. Can I also search for Steam profiles?
+                </div>
+                <div class="faq-answer">
+                    Yes! In addition to Faceit tracking, our site also functions as a Steam stats analyzer.
+                    Enter:<br><br>
+                    • Your Steam ID<br>
+                    • Your Steam username<br>
+                    • Or your full Steam profile link<br>
+                    Our Steam stats tracker will pull CS2 match stats, headshot percentages, weapon accuracy, alias
+                    history, and more!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    4. Is the Faceit stats up to date?
+                </div>
+                <div class="faq-answer">
+                    Absolutely — our Faceit analyzer fetches real-time data. You’ll always get the latest Faceit stats,
+                    match performance, and ban info — just like on the official Faceit platform or Steam profile.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    5. Do I need to log in to use this tool?
+                </div>
+                <div class="faq-answer">
+                    No login required! Our Faceit finder and tracker tool is completely accessible without signing in.
+                    Just provide:<br><br>
+                    • A Faceit nickname or ID<br>
+                    • Or a Steam profile link/username/ID<br>
+                    This Faceit account analyzer is designed for convenience and privacy.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    6. Can I view map-based statistics?
+                </div>
+                <div class="faq-answer">
+                    Yes, our Faceit stats tracker offers detailed map-based analysis. Use our Faceit profile finder to
+                    view performance stats for maps like Mirage, Inferno, Dust2, and more. Each map includes:<br><br>
+                    • Wins/Losses<br>
+                    • Kills, Deaths, Assists<br>
+                    • Match rating<br>
+                    • ELO change<br>
+                    • Date of last match<br>
+                    • Map images/avatars<br>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    7. Do I need a Faceit account to use this site?
+                </div>
+                <div class="faq-answer">
+                    Not at all. You can use our Faceit tracker and analyzer to search and view any Faceit player's stats
+                    without needing a personal account or login.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    8. Is the Faceit Account Finder free to use?
+                </div>
+                <div class="faq-answer">
+                    Yes, our Faceit Account Finder is 100% free to use. You can analyze unlimited Faceit stats, check
+                    player levels, ELO ratings, and detailed match history without paying anything. Perfect for players
+                    who want a free Faceit tracker tool.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    9. Can I compare Faceit stats with my teammates?
+                </div>
+                <div class="faq-answer">
+                    Absolutely! Our Faceit teammates comparison feature lets you analyze your friends’ stats side by
+                    side. Compare ELO progress, match history, K/D ratio, win rate, and map performance to see who is
+                    carrying and where improvements can be made.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    10. Does this tool include leaderboards and rankings?
+                </div>
+                <div class="faq-answer">
+                    Yes! You can view Faceit global leaderboards, country rankings, and hub standings. Track your
+                    position among CS2 players worldwide, follow professional players’ profiles, and monitor your
+                    progress toward higher Faceit levels.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    11. Can I track professional CS2 players on Faceit?
+                </div>
+                <div class="faq-answer">
+                    Yes, our Faceit tracker allows you to search for pro players and esports athletes. Simply enter
+                    their nickname or Steam ID to see their stats, performance, match history, and how they compare on
+                    the Faceit leaderboards.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    12. Does Faceit Account Finder support CS:GO stats too?
+                </div>
+                <div class="faq-answer">
+                    Definitely! In addition to CS2 stats, our tool also provides historical CS:GO statistics. You can
+                    explore your old match history, K/D ratio, maps performance, and ELO from CS:GO along with the
+                    latest CS2 data.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    13. How accurate is the Faceit stats tracker?
+                </div>
+                <div class="faq-answer">
+                    Our Faceit stats analyzer fetches real-time data directly from Faceit’s API. That means every match,
+                    ELO change, or leaderboard update is instantly available — ensuring the most accurate and reliable
+                    Faceit tracker experience.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    14. Can I search Faceit profiles by Steam URL?
+                </div>
+                <div class="faq-answer">
+                    Yes! You can find any Faceit account by entering a Steam URL, Steam ID, or Faceit nickname. Our
+                    integrated Faceit + Steam analyzer ensures you get complete stats, whether you’re looking up your
+                    own profile or a teammate’s.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    15. Is Faceit Account Finder mobile-friendly?
+                </div>
+                <div class="faq-answer">
+                    Absolutely! Our Faceit tracker is fully optimized for mobile and desktop. Whether you’re on PC,
+                    tablet, or smartphone, you can easily search and analyze Faceit stats anywhere.
+                </div>
+            </div>
+
+</section>
+
+<footer>
+  © 2026 Faceit Account Finder
+</footer>
+
+<script>
+document.querySelectorAll(".faq-item").forEach(item=>{
+  item.addEventListener("click", ()=>{
+    const ans = item.querySelector(".faq-answer");
+    ans.style.display = ans.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
 </body>
 </html>
